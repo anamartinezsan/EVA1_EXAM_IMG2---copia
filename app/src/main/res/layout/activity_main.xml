@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8C2D1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="279dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#8CA8CF"
+        android:indeterminate="false"
+        android:max="6"
+        android:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="344dp"
+            android:layout_height="569dp"
+            android:background="#A9ADAD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <fragment
+                android:id="@+id/fragment"
+                android:name="com.example.eva1_exam_img2.portrait_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

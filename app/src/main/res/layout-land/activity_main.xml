@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|fill_vertical"
+        android:max="6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="377dp"
+        android:layout_gravity="fill_vertical"
+        android:gravity="center_horizontal">
+
+        <FrameLayout
+            android:layout_width="191dp"
+            android:layout_height="321dp">
+
+            <fragment
+                android:id="@+id/fragment2"
+                android:name="com.example.eva1_exam_img2.land1"
+                android:layout_width="match_parent"
+                android:layout_height="343dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="194dp"
+            android:layout_height="321dp">
+
+            <fragment
+                android:id="@+id/fragment3"
+                android:name="com.example.eva1_exam_img2.land2"
+                android:layout_width="match_parent"
+                android:layout_height="339dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout3"
+            android:layout_width="186dp"
+            android:layout_height="321dp">
+
+            <fragment
+                android:id="@+id/fragment4"
+                android:name="com.example.eva1_exam_img2.land3"
+                android:layout_width="match_parent"
+                android:layout_height="343dp" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
