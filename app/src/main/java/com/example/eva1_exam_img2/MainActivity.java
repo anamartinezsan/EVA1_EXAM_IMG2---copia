@@ -44,30 +44,27 @@ ImageView imagePortrait, img1, img2, img3;
             skBr.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
                 @Override
                 public void onProgressChanged(SeekBar seekBar, int progress,boolean fromUser) {
-                    switch (progress){
-
+                    switch(progress){
                         case 0:
-                            imagePortrait.setImageResource(R.drawable.a1);
-                            imagePortrait.startAnimation(animation);
+                            frag.startAnimation(animation);
                             break;
                         case 1:
-                            imagePortrait.setImageResource(R.drawable.a2);
-                            imagePortrait.startAnimation(animation);
+                            frag1.startAnimation(animation);
                             break;
-                        case 2: imagePortrait.setImageResource(R.drawable.a3);
-                        imagePortrait.startAnimation(animation);
+                        case 2: 
+                        frag2.startAnimation(animation);
                             break;
-                        case 3: imagePortrait.setImageResource(R.drawable.a4);
-                                imagePortrait.startAnimation(animation);
+                        case 3: 
+                                frag3.startAnimation(animation);
                             break;
-                        case 4: imagePortrait.setImageResource(R.drawable.a5);
-                                imagePortrait.startAnimation(animation);
+                        case 4: 
+                                frag4.startAnimation(animation);
                             break;
-                        case 5: imagePortrait.setImageResource(R.drawable.a6);
-                                imagePortrait.startAnimation(animation);
+                        case 5: 
+                                frag5.startAnimation(animation);
                             break;
-                        case 6: imagePortrait.setImageResource(R.drawable.a7);
-                                imagePortrait.startAnimation(animation);
+                        case 6: 
+                                frag6.startAnimation(animation);
                             break;
 
                     }
@@ -87,54 +84,39 @@ ImageView imagePortrait, img1, img2, img3;
 
 
                     switch (progress){
-                        case 0: img1.setImageResource(R.drawable.a1);
-                                img1.startAnimation(animation);
-                                img2.setImageResource(R.drawable.a2);
-                                img2.startAnimation(animation);
-                                img3.setImageResource(R.drawable.a3);
-                                img3.startAnimation(animation);
+                        case 0: 
+                                frag.startAnimation(animation);
+                                
+                                frag1.startAnimation(animation);
+                                
+                                frag2.startAnimation(animation);
                             break;
-                        case 1: img1.setImageResource(R.drawable.a2);
-                                img1.startAnimation(animation);
-                                img2.setImageResource(R.drawable.a3);
-                                img2.startAnimation(animation);
-                                img3.setImageResource(R.drawable.a4);
-                                img3.startAnimation(animation);
+                        case 1: 
+                                .startAnimation(animation);
+                                
+                                .startAnimation(animation);
+                                
+                                .startAnimation(animation);
                             break;
-                        case 2: img1.setImageResource(R.drawable.a3);
-                                img1.startAnimation(animation);
-                                img2.setImageResource(R.drawable.a4);
-                                img2.startAnimation(animation);
-                                img3.setImageResource(R.drawable.a5);
-                                img3.startAnimation(animation);
+                        case 2: 
+                                .startAnimation(animation);
+                                
+                                .startAnimation(animation);
+                                
+                                .startAnimation(animation);
                             break;
-                        case 3: img1.setImageResource(R.drawable.a4);
-                                img1.startAnimation(animation);
-                                img2.setImageResource(R.drawable.a5);
-                                img2.startAnimation(animation);
-                                img3.setImageResource(R.drawable.a6);
-                                img3.startAnimation(animation);
+                        case 3: 
+                                .startAnimation(animation);
+                                
                             break;
-                        case 4: img1.setImageResource(R.drawable.a5);
-                                img1.startAnimation(animation);
-                                img2.setImageResource(R.drawable.a6);
-                                img2.startAnimation(animation);
-                                img3.setImageResource(R.drawable.a7);
-                                img3.startAnimation(animation);
+                        case 4: 
+                                .startAnimation(animation);
                             break;
-                        case 5:  img1.setImageResource(R.drawable.a5);
-                                 img1.startAnimation(animation);
-                                 img2.setImageResource(R.drawable.a6);
-                                 img2.startAnimation(animation);
-                                 img3.setImageResource(R.drawable.a7);
-                                 img3.startAnimation(animation);
+                        case 5:  
+                                 .startAnimation(animation);
                             break;
-                        case 6: img1.setImageResource(R.drawable.a5);
-                                img1.startAnimation(animation);
-                                img2.setImageResource(R.drawable.a6);
-                                img2.startAnimation(animation);
-                                img3.setImageResource(R.drawable.a7);
-                                img3.startAnimation(animation);
+                        case 6: 
+                                .startAnimation(animation);
                             break;
                     }
                 }
